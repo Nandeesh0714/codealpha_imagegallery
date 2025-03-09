@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="img-gallery">
+        <div class="top-section pl-4">
+            <h2>Image Gallery</h2>
+        </div>
+        <div class="full-img" id="fullimgbox">
+            <svg onclick="closeFullImg()" xmlns="http://www.w3.org/2000/svg" width="60" height="40" fill="white" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+            </svg><br />
+            <img src="https://tse2.mm.bing.net/th?id=OIP.gASMlPqsrIt_9q8Y76PZKgHaFj&pid=Api&P=0&h=180" alt="" class="bigimage" id="fullImg" />
+        </div>
+        <div class="image-section">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.gASMlPqsrIt_9q8Y76PZKgHaFj&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse4.mm.bing.net/th?id=OIP.6Axh0-PYY8UQVpfS08w3gwHaE8&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse3.mm.bing.net/th?id=OIP.GvntOdvz80txbfbW4rz2kAHaEo&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse4.mm.bing.net/th?id=OIP.6dzqZFJmAcaXVeZrJK7mBQHaFj&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse2.mm.bing.net/th?id=OIP.W2ZZmFD47OaU47rNNwzzUAHaEo&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse3.mm.bing.net/th?id=OIP.MCLzVoExgXPyNi_V5gb1AwHaE7&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse1.mm.bing.net/th?id=OIP.Etep9_KySt6oX4fFEcpMUgHaEK&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse2.mm.bing.net/th?id=OIP.Pq8MPxEGieC4WCJZzGYV2wHaEo&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse2.mm.bing.net/th?id=OIP.juDo8a_p5VtZ7imXbO5ErQHaEK&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse1.mm.bing.net/th?id=OIP.cX8-4bpm-B0Vg6x-SU7EvgEJDr&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse1.mm.bing.net/th?id=OIP.z9DgCgl3z9jhbiJDMuwsOAHaEK&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse2.mm.bing.net/th?id=OIP.Ekodt74sE9k22Kcb1D_9XwHaFj&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse3.mm.bing.net/th?id=OIP.chm9ucEu0QOepXgC6f2JRgHaEK&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse3.mm.bing.net/th?id=OIP._QDcbqpMcOrHvBlj8cEEhQHaEo&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse2.mm.bing.net/th?id=OIP.Op8CEP99HoMDn_I3yBusrgHaEI&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse3.mm.bing.net/th?id=OIP.IREe027_VyQFZnlwedTCvgHaEo&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse2.mm.bing.net/th?id=OIP.esdHnlB-eysViOsi0G_x9QHaEo&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse4.mm.bing.net/th?id=OIP.ae8FsepFg2p0AjHI7pGDwgHaGb&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse4.mm.bing.net/th?id=OIP.Mvcr0QDsGXOx29cSBfXd6AHaE7&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse4.mm.bing.net/th?id=OIP.rj0vSIDqyhK-fITi0sVgQQHaEK&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+
+            <img src="https://tse4.mm.bing.net/th?id=OIP.xLGzKtkI_uvu9FPme-aoNwHaLH&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse4.mm.bing.net/th?id=OIP.DVponYfWxl-fRPR3r-FQYAHaE8&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse3.mm.bing.net/th?id=OIP.stAmpNiFwIl_UmVtaMMYcAHaEo&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse2.mm.bing.net/th?id=OIP.WMKVyddsxju6BaCmWusRJQHaE8&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse1.mm.bing.net/th?id=OIP.8axlIlZgFpjsIM3ZRglfJQHaEo&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse1.mm.bing.net/th?id=OIP.4ScjR1UMYjLrMJE02wQcygHaEK&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse2.mm.bing.net/th?id=OIP.lV1oEE06ni8bgO2d9lnkvQHaFj&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse3.mm.bing.net/th?id=OIP.BllDAX8CELn0qncdDrxSywAAAA&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse4.mm.bing.net/th?id=OIP.JwXm_9UuNCq0AX5ungx8NwHaE8&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse4.mm.bing.net/th?id=OIP.ymG6bc3-_A-Rx4SOwLmW2gHaE8&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse1.mm.bing.net/th?id=OIP.NzB6zi4OnyvYlbYWj25zcwHaFn&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse1.mm.bing.net/th?id=OIP.TrAbbR3oGA_Ban6kV98t0AHaE6&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse3.mm.bing.net/th?id=OIP._Goo8jeiHSYhI09Lbr3q0wHaFj&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse1.mm.bing.net/th?id=OIP.B30vSxgX3sZJsojazm0dEAHaEo&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse4.mm.bing.net/th?id=OIP.NC0d029I_r4ELJIxqx4M0wHaF7&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse2.mm.bing.net/th?id=OIP.6WHMn67t3LMEerhCo6wV5gHaFj&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse1.mm.bing.net/th?id=OIP.E-Nnify7Ltg95F7Ljd2cdQHaEo&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse1.mm.bing.net/th?id=OIP.UiooJYw-7eB-qKMErpo3RAHaEc&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse3.mm.bing.net/th?id=OIP.NXIHCB_yeFHRamk6KisdIAHaE7&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse3.mm.bing.net/th?id=OIP.u2lgkZylG0sBjXKCk_QZ5gHaFj&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse1.mm.bing.net/th?id=OIP.SjwbgqNrBa9xHAl04Yqm6QHaFR&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse4.mm.bing.net/th?id=OIP.d_Pw3QuSXvWHtn8bnY8nWAHaEK&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse3.mm.bing.net/th?id=OIP.0tv8gfpBp73hCjhBXeGZFgHaFj&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse4.mm.bing.net/th?id=OIP.1c4ZKxkhehRvZ-ctinhmhQHaEo&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse3.mm.bing.net/th?id=OIP.VAggpSxPeYoVx8xs9lBYoQHaE8&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse4.mm.bing.net/th?id=OIP.oGsDYZF1kZ_iGP7q7XszigHaE8&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse4.mm.bing.net/th?id=OIP.BSk3XxtWNGqzMt5pTSuT3wHaFj&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse4.mm.bing.net/th?id=OIP.k7zW8jygYG0rY6I0sQdXewHaE4&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse2.mm.bing.net/th?id=OIP.e6VkjbBGXK6iNlfVA3TSyAHaFj&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse3.mm.bing.net/th?id=OIP.Rn9qEvu8R2Wwy18zb0h3hgHaF1&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse4.mm.bing.net/th?id=OIP.aryAOCP73sRH5NxNIPd9bAHaE9&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse1.mm.bing.net/th?id=OIP.CuvOUpFbqPsEpb9_kP6sMAHaFj&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse1.mm.bing.net/th?id=OIP.vSqy4ZQonzSy5dD96_X9qgHaEa&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse2.mm.bing.net/th?id=OIP.2QzwuQNbPaXJ-S3sXU5ADwHaER&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse4.mm.bing.net/th?id=OIP.MI3nkHMU8HEDdD3HDtoGTQHaE8&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse2.mm.bing.net/th?id=OIP.b597_xwcMt54a4k0hf96tgHaEo&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse4.mm.bing.net/th?id=OIP.K1EnoFS82G9NFV2lKFbRZQHaE8&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse4.mm.bing.net/th?id=OIP.hZqY5mM2mLp_XayM-zFMmQHaE1&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse3.mm.bing.net/th?id=OIP.uqbJO_Wb6F1X9xKCo9kn-AHaE8&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse3.mm.bing.net/th?id=OIP.W_itMW5hTkkEcy7YvUwQsgHaE8&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse1.mm.bing.net/th?id=OIP.Nfd-_b2A1A1D6AsvReUmgAHaEc&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse3.mm.bing.net/th?id=OIP.S16MwWFznloeMQVbOE-bugHaEp&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse3.mm.bing.net/th?id=OIP.MInViflWTn0CIsOU3esbLwHaE5&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse3.mm.bing.net/th?id=OIP.S16MwWFznloeMQVbOE-bugHaEp&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src=https://tse3.mm.bing.net/th?id=OIP.MInViflWTn0CIsOU3esbLwHaE5&pid=Api&P=0&h=180"" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse3.mm.bing.net/th?id=OIP.zg6W_4qdBqPw9EKW_D1X-gHaE8&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse4.mm.bing.net/th?id=OIP.Z5iajfFKkXp6d_z6beMYqQHaE6&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse3.mm.bing.net/th?id=OIP.1JK9HpXb6c-f1q4AgDTQFAHaEo&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse1.mm.bing.net/th?id=OIP.Q5qWgU5K29v8uMzE3-VCjwHaE8&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse4.mm.bing.net/th?id=OIP.FXBuJ8RmUJkOTSC-qd-M6wHaEK&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse4.mm.bing.net/th?id=OIP.k2LZC5ZIIDQUr0EO6zNCFgHaE6&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse1.mm.bing.net/th?id=OIP.dI22OgiQxCFyDNQ2PaNtvQHaE8&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse2.mm.bing.net/th?id=OIP.yfwn-FMzfhgWGXsHAZ5I9AHaE8&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse4.mm.bing.net/th?id=OIP.euVpA_YeXHKasJgQKETWKAHaEo&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse3.mm.bing.net/th?id=OIP.bfNhVjewALpMtf66seVF8AHaEK&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse1.mm.bing.net/th?id=OIP.LDxy5QhoBhLIFOnZiWm2_wHaEo&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse4.mm.bing.net/th?id=OIP.NR_xmK4mX_8bUwBr8H3UxQHaFX&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse2.mm.bing.net/th?id=OIP.iiz9_y-7ku4FZBxPcCrdQwHaNK&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse2.mm.bing.net/th?id=OIP.xvsBG6OR-GsO6ES0P_r-ZAHaFj&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse2.mm.bing.net/th?id=OIP.T0XaDbf_2UMPMhrzg4s-qAHaEo&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse3.mm.bing.net/th?id=OIP.z7nWnlrlsV4GLb14Hp0f7AHaEo&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse3.mm.bing.net/th?id=OIP.YbW-EBt_kYn_xiNHMwMntgHaEo&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse4.mm.bing.net/th?id=OIP.6-8n9SNks_BeP4DGThbX9wHaEo&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse2.mm.bing.net/th?id=OIP.H8rF4yORl_kyNy-yMS7VkgHaE8&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+            <img src="https://tse4.mm.bing.net/th?id=OIP.91MP3vBthiRcjNc58qXPdgHaEo&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)" />
+
+        </div>
+    </div>
+    <script type="text/javascript" src="https://new-assets.ccbp.in/frontend/content/static-ccbp-ui-kit/static-ccbp-ui-kit.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        var fullimgbox = document.getElementById("fullimgbox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openFullImg(pic) {
+            fullimgbox.style.display = "flex";
+            fullImg.src = pic;
+        }
+
+        function closeFullImg() {
+            fullimgbox.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
